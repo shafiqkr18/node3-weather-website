@@ -12,7 +12,7 @@ const forecast = (lat,lon, callback) => {
             callback("unable to find loc ",  undefined)
          }else{
              callback(undefined,{
-                 temprature:body.current.temperature
+                 temprature:body.current.temperature+ " is current temp"
              })
          }
     })
